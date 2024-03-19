@@ -16,10 +16,11 @@
 </head>
 
 <body class="bg-indigo-950 p-3">
-    <div class="lg:w-2/4 mx-auto py-8 px-6 bg-yellow-400 rounded-xl">
+    <div class="lg:w-2/4 mx-auto py-8 px-6 bg-white rounded-xl">
         <h1 class="font-bold text-5xl text-center mb-8 rounded-xl">Todo-List in Laravels</h1>
         <div class="mb-6">
             <form action="" class="flex flex-col space-y-4" method="POST">
+              @csrf
                 <input type="text" name="title" placeholder="What's your todo?"
                     class="py-3 px-4 bg-gray-100 rounded-xl">
                 {{-- <div class="w-100">
@@ -45,7 +46,7 @@
           <div class="py-4 flex items-center border-b border-gray-300 px-3">
             <div class="flex-1 pr-8">
               <h3 class="text-lg text-indigo-800 font-semibold">Title</h3>
-              <p class="text-white">Description</p>
+              <p class="text-black">Description</p>
             </div>
             <div class="flex space-x-3">
               <button class="py-2 px-2 bg-indigo-950 text-white rounded-xl">
